@@ -16,3 +16,16 @@ def fibs_rec(i, n=2, fib_array=[0,1])
   fib_array
 end
 print(fibs_rec(8))
+
+arr = [6,3,4,9,2,5,7,1]
+
+def merge_sort(arr)
+  n = arr.length()/2
+  if n<1
+    arr
+  else
+    left=merge_sort(arr[..n])
+    right=merge_sort(arr[n..])
+    
+  end
+
